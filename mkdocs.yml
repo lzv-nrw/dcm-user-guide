@@ -1,0 +1,74 @@
+site_name: "DCM User Guide"
+site_author: "Stephan Lenartz, Jan-Erik Stange"
+
+site_dir: public
+docs_dir: docs
+
+extra:
+  version: "1.0.0"
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: de
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Zu Dunkelmodus wechseln
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Zu Hellmodus wechseln
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Startseite: index.md
+  - Grundlagen: grundlagen.md
+  - Benutzeroberfläche: benutzeroberflaeche.md
+  - Anwendung administieren: anwendung-administrieren.md
+  - Jobs konfigurieren: jobs-konfigurieren.md
+  - Jobs managen und überwachen: jobs-managen-und-ueberwachen.md
+  - Glossar: glossar.md
+
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: fade
+      width: 100%
+      height: auto
+      zoomable: false
+      draggable: false
+      skip_classes:
+        - no-glightbox
+      auto_themed: false
+      auto_caption: true
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
+  - git-revision-date-localized:
+      type: iso_date
+      timezone: Europe/Berlin
+      locale: de
+      fallback_to_build_date: false
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - def_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
