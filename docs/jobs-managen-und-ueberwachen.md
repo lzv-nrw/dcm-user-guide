@@ -32,7 +32,7 @@ Führt den Job manuell aus, unabhängig davon, ob ein Zeitplan definiert ist. Di
 ![](assets/images/icons/optionen.png){ .no-glightbox width="14px" } **Weitere Optionen**
 
 : **Job-Report herunterladen**  
-  Ermöglicht den Download des ausführlichen Ergebnis- und Fehlerreports des gesamten Jobs, inklusive aller bisherigen Ausführungen.
+  Ermöglicht den Download des ausführlichen Ergebnis- und Fehlerreports der letzten Job-Ausführung.
 
 : **Job bearbeiten**  
   Öffnet den Job-Wizard zur Konfiguration des Jobs.

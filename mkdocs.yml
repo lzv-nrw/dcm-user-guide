@@ -5,7 +5,7 @@ site_dir: public
 docs_dir: docs
 
 extra:
-  version: "1.0.0"
+  version: "1.0.1"
 
 theme:
   name: material
@@ -32,7 +32,7 @@ nav:
   - Startseite: index.md
   - Grundlagen: grundlagen.md
   - Benutzeroberfläche: benutzeroberflaeche.md
-  - Anwendung administieren: anwendung-administrieren.md
+  - Anwendung administrieren: anwendung-administrieren.md
   - Jobs konfigurieren: jobs-konfigurieren.md
   - Jobs managen und überwachen: jobs-managen-und-ueberwachen.md
   - Glossar: glossar.md

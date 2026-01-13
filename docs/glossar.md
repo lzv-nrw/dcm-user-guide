@@ -24,6 +24,9 @@ Logisch zusammengehörige Einheit von Inhalten, die im Kontext der digitalen Lan
 ### Job
 Konkrete Konfiguration und Verarbeitungseinheit innerhalb des DCM. Ein Job definiert Datenquellen, Metadaten-Mappings und ggf. Ausführungszeitpunkte. Er kann manuell gestartet oder zeitgesteuert ausgeführt werden.
 
+### OAI-PMH
+Standardprotokoll zum Einsammeln von Metadaten aus Repositorien. Im DCM wird OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting) verwendet, um Metadaten abzurufen und als Grundlage für die Erstellung von Information Packages (IPs) zu nutzen. Der eigentliche Payload wird dabei nicht über OAI-PMH übertragen, sondern anhand der in den Records enthaltenen Links vom DCM automatisch nachgeladen.
+
 ### Objektvalidierung
 Prüfung der im Payload enthaltenen Dateien auf formale Korrektheit. Zur Validierung unterstützter Formate kommt JHOVE zum Einsatz.
 
@@ -35,9 +38,6 @@ Phase vor der eigentlichen Übergabe an ein Langzeitarchivsystem, in der digital
 
 ### Preservation Level
 Metadatum zur Kennzeichnung der angestrebten Archivierungstiefe eines Objekts. Es beschreibt, in welchem Umfang ein digitales Objekt langfristig erhalten und nutzbar gemacht werden soll, z. B. auf Bitstream-Ebene oder mit weitergehenden Erhaltungszielen (logical, semantic).
-
-### OAI-PMH
-Standardprotokoll zum Einsammeln von Metadaten aus Repositorien. Im DCM wird OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting) verwendet, um Metadaten abzurufen und als Grundlage für die Erstellung von Information Packages (IPs) zu nutzen. Der eigentliche Payload wird dabei nicht über OAI-PMH übertragen, sondern anhand der in den Records enthaltenen Links vom DCM automatisch nachgeladen.
 
 ### Signifikante Eigenschaften
 Eigenschaften eines digitalen Objekts, die für dessen langfristige Verständlichkeit, Authentizität und Nutzbarkeit wesentlich sind. Sie werden im DCM als intellektuell erfasste Metadaten in den Kategorien Aussehen, Verhalten, Inhalt, Kontext und Struktur beschrieben.

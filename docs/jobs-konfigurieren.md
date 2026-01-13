@@ -4,11 +4,10 @@ In diesem Kapitel werden alle Schritte beschrieben, die Datenkurator:innen beim 
 
 ## Einen neuen Job anlegen
 
-Auf der Seite *Jobs* starten Sie die Konfiguration eines neuen Jobs über den Job-Wizard. 
+Auf der Seite *Jobs* starten Sie die Konfiguration eines neuen Jobs über den Job-Wizard.
 Der Wizard führt Sie schrittweise durch alle erforderlichen Einstellungen und prüft Ihre Eingaben kontinuierlich. Fehlende oder ungültige Angaben werden dabei farblich hervorgehoben.
 
 Zu Beginn legen Sie fest, in welchem Arbeitsbereich der Job angelegt werden soll, und wählen das Template aus, das die Grundlage der Jobkonfiguration bildet.
-
 
 <div class="grid cards" markdown>
 
@@ -38,14 +37,13 @@ Zu Beginn legen Sie fest, in welchem Arbeitsbereich der Job angelegt werden soll
 
 </div>
 
-
 ### Job beschreiben
 
 In diesem Schritt erfassen Sie die grundlegenden Angaben zu Ihrem Job. Ein aussagekräftiger Titel erleichtert es, den Job später in der Übersicht eindeutig zu identifizieren.
 
 In der Beschreibung können Sie zusätzliche Hinweise festhalten, die Ihnen oder Kolleg:innen beim Verständnis des Jobs helfen. 
 
-Durch die Angabe eines Ansprechpartners für das Quellsystem stellen Sie sicher, dass bei Rückfragen zur Datenquelle schnell die richtige Kontaktperson erreicht werden kann. 
+Durch die Angabe eines Ansprechpartners für das Quellsystem stellen Sie sicher, dass bei Rückfragen zur Datenquelle schnell die richtige Kontaktperson erreicht werden kann.
 
 
 <div class="grid cards" markdown>
@@ -58,24 +56,14 @@ Erfassen Sie Titel, Beschreibung und Ansprechpartner für den Job.
 
 ### Daten auswählen
 
-In diesem Schritt legen Sie fest, welche Daten der DCM im Rahmen des Jobs verarbeiten soll. 
+In diesem Schritt legen Sie fest, welche Daten der DCM im Rahmen des Jobs verarbeiten soll.
 Die verfügbaren Optionen hängen vom gewählten Job-Typ ab und richten sich nach dem zugrunde liegenden Template.
-
-Bei OAI-PMH-Jobs definieren Sie die Datenquelle sowie optionale Einschränkungen, etwa nach Sets oder Zeiträumen.  
-Bei Hotfolder-Jobs wählen Sie ein Verzeichnis aus, in das extern erzeugte Information Packages geliefert werden.
-
 
 #### OAI-PMH-Harvesting
 
+Wenn das Template auf OAI-PMH basiert, haben Sie die Möglichkeit, die Auswahl der zu archivierenden Daten zeitlich und/oder auf ein oder mehrere Set(s) zu beschränken.
+
 <div class="grid cards" markdown>
-
--   **Datenquelle festlegen**
-
-    ---
-
-    ![Legen Sie fest, aus welcher OAI-PMH-Quelle die Daten bezogen werden.](assets/images/screenshots/curator/job-konfigurieren/job-datenauswahl-oai.png){ .image-frame }
-
-    Legen Sie fest, aus welcher OAI-PMH-Quelle die Daten bezogen werden.
 
 -   **Zeitraum eingrenzen**
 
@@ -85,22 +73,19 @@ Bei Hotfolder-Jobs wählen Sie ein Verzeichnis aus, in das extern erzeugte Infor
 
     Schränken Sie die Datenauswahl optional auf ein bestimmtes Startdatum oder einen Zeitraum ein.
 
--   **Datenauswahl einschränken**
+-   **Sets auswählen**
 
     ---
 
-    ![Begrenzen Sie die Verarbeitung auf ein oder mehrere Set(s).](assets/images/screenshots/curator/job-konfigurieren/job-datenauswahl-oai-set.png){ .image-frame }
+    ![Begrenzen Sie die Verarbeitung bei Bedarf auf ein oder mehrere Set(s).](assets/images/screenshots/curator/job-konfigurieren/job-datenauswahl-oai-set.png){ .image-frame }
 
     Begrenzen Sie die Verarbeitung bei Bedarf auf ein oder mehrere Set(s).
 
 </div>
 
-
-Wenn das Template auf OAI-PMH basiert, haben Sie die Möglichkeit, die Auswahl der zu archivierenden Daten auf ein oder mehrere Set(s) und/oder zeitlich zu beschränken . 
+#### Hotfolder
 
 Wenn Sie mit extern erstellten IPs arbeiten, wählen Sie ein bestehendes Verzeichnis aus, das der DCM als Quelle nutzt. Der Assistent zeigt Ihnen alle verfügbaren Verzeichnisse an; bei Bedarf können Sie ein neues Verzeichnis erstellen, aus dem Information Packages geladen werden sollen.
-
-#### Hotfolder
 
 !!! info
     Die hier angzeigten Verzeichnisse sind Unterverzeichnisse des von Administrator:innen mit dem Template verknüpften Hotfolders. Wie Sie Daten in diese Verzeichnisse übertragen, hängt von der Systemkonfiguration ab. Je nach Einrichtung des DCM können dafür unterschiedliche Verfahren genutzt werden, z.B. NFS, SMB oder SFTP. Welche Methode Sie verwenden, richtet sich nach der Konfiguration der Anwendungsumgebung.
@@ -108,14 +93,6 @@ Wenn Sie mit extern erstellten IPs arbeiten, wählen Sie ein bestehendes Verzeic
     Jedes Verzeichnis kann mit genau einem Job verknüpft werden.
 
 <div class="grid cards" markdown>
-
--   **Hotfolder auswählen**
-
-    ---
-
-    ![Wählen Sie den Hotfolder aus, der als Quelle für externe IPs dient, die von diesem Job verarbeitet werden sollen.](assets/images/screenshots/curator/job-konfigurieren/job-datenauswahl-hotfolder.png){ .image-frame }
-
-    Wählen Sie den Hotfolder aus, der als Quelle für externe IPs dient, die von diesem Job verarbeitet werden sollen.
 
 -   **Vorhandenes Verzeichnis auswählen**
 
@@ -163,7 +140,7 @@ Für OAI-PMH-Jobs ist das Hochladen eines Mappingskripts erforderlich.
 
 **Vom Quellsystem zum IP – so funktioniert das Mapping**
 
-In diesem Abschnitt finden Sie zwei einfache Beispielskripte – eines in XSLT und eines in Python –, die zeigen, wie Metadaten aus Ihrem Quellsystem in die Struktur des Information Packages übertragen werdeb. Beide Skripte übernehmen dabei dieselbe Aufgabe: Sie lesen grundlegende Felder aus den gelieferten Metadaten aus und schreiben sie in die passenden IP-Metadaten hinein.
+In diesem Abschnitt finden Sie zwei einfache Beispielskripte – eines in XSLT und eines in Python –, die zeigen, wie Metadaten aus Ihrem Quellsystem in die Struktur des Information Packages übertragen werden. Beide Skripte übernehmen dabei dieselbe Aufgabe: Sie lesen grundlegende Felder aus den gelieferten Metadaten aus und schreiben sie in die passenden IP-Metadaten hinein.
 
 Die Beispiele sollen Ihnen den Einstieg erleichtern und können als Vorlage für Ihre eigenen Skripte dienen. Sie lassen sich leicht an unterschiedliche Quellen oder Projekterfordernisse anpassen. In beiden Beispielen wird mit Metadaten im Format Dublin Core (DC) gearbeitet.
 
@@ -346,7 +323,6 @@ In diesem Abschnitt legen Sie fest, wie rechtebezogene Metadaten für die Intell
 
 Die hier konfigurierten Felder beziehen sich auf die entsprechenden Einträge in der *bag-info.txt* gemäß der IP-Spezifikation. 
 Auf diese Weise können Rechteinformationen gezielt ergänzt, ersetzt oder überschrieben werden, um eine konsistente und institutionskonforme Beschreibung der archivierten Objekte sicherzustellen.
-
 
 <div class="grid cards" markdown>
 

@@ -25,9 +25,9 @@ Eine Navigationsleiste ermöglicht den schnellen Wechsel zwischen den Hauptberei
 
     ---
 
-    ![Nach dem Login gelangen Sie auf die Startseite. Als Datenkurator:in haben Sie über die Naviagtionsleiste oben Zugriff "Übersicht“ und „Jobs“.](assets/images/screenshots/basics/home-curator.png){ .image-frame }
+    ![Nach dem Login gelangen Sie auf die Startseite. Als Datenkurator:in haben Sie über die Navigationsleiste oben Zugriff "Übersicht“ und „Jobs“.](assets/images/screenshots/basics/home-curator.png){ .image-frame }
 
-    Nach dem Login gelangen Sie auf die Startseite. Als Datenkurator:in haben Sie über die Naviagtionsleiste oben Zugriff *Übersicht* und *Jobs*.
+    Nach dem Login gelangen Sie auf die Startseite. Als Datenkurator:in haben Sie über die Navigationsleiste oben Zugriff *Übersicht* und *Jobs*.
 
 -   **Übersicht**
 
